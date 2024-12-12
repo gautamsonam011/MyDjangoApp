@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
-    <style>
-        table{
-            color:brown;
-            border: 2px solid blue;
-            background-color: darkcyan;
-            
-        }
-        table, th, td{
-            text-align: center;
-            border: 3px solid green;
-            padding: 2px;
-        }
-    </style>
-</head>
-<body>
+{% extends "master.html" %}
+
+{% block title %}
+  List of all Users
+{% endblock %}
+
+{% block content %}    
     <h1>This is a django</h1>
     
     <table>
@@ -41,6 +27,5 @@
         </tr>
         {% endfor %}
     </table>
-   
-</body>
-</html>
+
+    {% endblock %}

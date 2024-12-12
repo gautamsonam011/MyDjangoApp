@@ -1,0 +1,13 @@
+{% extends %}
+
+{% block title %}
+Details About {{data.firstName}} {{data.lastName}}
+{% endblock %}
+
+{% block content %}    
+    <h1>{{data.firstName}} {{data.lastName}}</h1>
+    <p>Phone:{{data.mobile}}</p>
+    <p>Member since:{{data.joined}}</p>
+    <p>Back to <a href="/member">Member</a></p>
+    
+{% endblock %}

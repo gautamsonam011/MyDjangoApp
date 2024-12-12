@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock%}</title>
+    <style>
+        table{
+            color:brown;
+            border: 2px solid blue;
+            background-color: darkcyan;
+            
+        }
+        table, th, td{
+            text-align: center;
+            border: 3px solid green;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock }
+</body>
+</html>

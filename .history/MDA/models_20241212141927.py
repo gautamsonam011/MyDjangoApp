@@ -3,7 +3,7 @@ from django.utils import timezone
 
 # Create your models here.
 
-class User(models.Model):
+class Member(models.Model):
     firstName = models.CharField(max_length=240)
     lastName = models.CharField(max_length=240)
     age = models.CharField(max_length=240)

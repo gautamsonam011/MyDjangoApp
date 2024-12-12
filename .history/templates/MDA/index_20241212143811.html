@@ -4,19 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
-    <style>
-        table{
-            color:brown;
-            border: 2px solid blue;
-            background-color: darkcyan;
-            
-        }
-        table, th, td{
-            text-align: center;
-            border: 3px solid green;
-            padding: 2px;
-        }
-    </style>
 </head>
 <body>
     <h1>This is a django</h1>
@@ -32,11 +19,11 @@
         </tr>
         {% for a in new_data %}
         <tr>
-            <td>{{a.id}}</td>
+            <tr>{{a.id}}</tr>
             <td>{{a.firstName}} {{a.lastName}}</td>
             <td>{{a.age}}</td>
             <td>{{a.mobile}}</td>
-            <td>{{a.joined}}</td>
+            <td>{{a.joined_date}}</td>
             <td><a href="date/{{a.id}}">-></a></td>
         </tr>
         {% endfor %}

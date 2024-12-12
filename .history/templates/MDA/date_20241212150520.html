@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Details About {{data.firstName}} {{data.lastName}}
+{% endblock %}
+
+<style>
+    table{
+        color:brown;
+        border: 2px solid blue;
+        background-color: darkcyan;
+        
+    }
+    table, th, td{
+        text-align: center;
+        border: 3px solid green;
+        padding: 2px;
+    }
+</style>
+
+{% block content %}    
+    <h1>{{data.firstName}} {{data.lastName}}</h1>
+    <p>Phone:{{data.mobile}}</p>
+    <p>Member since:{{data.joined}}</p>
+    <p>Back to <a href="/member">Member</a></p>
+    
+{% endblock %}

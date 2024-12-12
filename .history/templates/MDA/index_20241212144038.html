@@ -9,12 +9,6 @@
             color:brown;
             border: 2px solid blue;
             background-color: darkcyan;
-            
-        }
-        table, th, td{
-            text-align: center;
-            border: 3px solid green;
-            padding: 2px;
         }
     </style>
 </head>
@@ -36,7 +30,7 @@
             <td>{{a.firstName}} {{a.lastName}}</td>
             <td>{{a.age}}</td>
             <td>{{a.mobile}}</td>
-            <td>{{a.joined}}</td>
+            <td>{{a.joined_date}}</td>
             <td><a href="date/{{a.id}}">-></a></td>
         </tr>
         {% endfor %}

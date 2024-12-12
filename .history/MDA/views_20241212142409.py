@@ -31,14 +31,3 @@ def date_details(request, id):
     }
 
     return HttpResponse(template.render(context, request))
-
-# Master Template 
-
-def master_views(request):
-    new_data = User.objects.all().values()
-    template = loader.get_template('./MDA/allMaster.html')
-    context = {
-        'new_data':new_data,
-    }
-
-    return HttpResponse(template.render(context, request))
