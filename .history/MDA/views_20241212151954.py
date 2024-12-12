@@ -47,5 +47,5 @@ def master_views(request):
 # add main index page 
 
 def main_views(request):
-    template = loader.get_template('./MDA/home.html')
+    template = loader.get_template('.MDA/home.html')
     return HttpResponse(template.render())
