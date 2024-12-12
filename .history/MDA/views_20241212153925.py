@@ -59,7 +59,7 @@ def not_found(request):
 # text views 
 
 def testing_views(request):
-    template = loader.get_template('./MDA/testing.html')
+    template = loader.get_template('./MDA/404error.html')
     context = {
         'fruits': ['Apple', 'Banana', 'Cherry'],
     }

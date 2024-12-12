@@ -1,0 +1,12 @@
+{% extends "MDA/base.html" %}
+
+{% block title %}
+Testing Page
+{% endblock %}
+
+{% block content %}    
+    {% for x in fruits %}
+    <h1>{{x}}</h1>
+    {% endfor %}
+    
+{% endblock %}

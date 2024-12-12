@@ -50,18 +50,6 @@ def main_views(request):
     template = loader.get_template('./MDA/home.html')
     return HttpResponse(template.render())
 
-# 404 Not Found 
-
 def not_found(request):
     template = loader.get_template('./MDA/404error.html')
     return HttpResponse(template.render())
-
-# text views 
-
-def testing_views(request):
-    template = loader.get_template('./MDA/testing.html')
-    context = {
-        'fruits': ['Apple', 'Banana', 'Cherry'],
-    }
-
-    return HttpResponse(template.render(context, request))

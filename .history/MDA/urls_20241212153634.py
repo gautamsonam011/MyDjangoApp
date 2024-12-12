@@ -9,5 +9,4 @@ urlpatterns = [
     path('main/member/date/<int:id>', views.date_details, name='date'),
     path('master/', views.master_views, name='master'),
     path('404/', views.not_found, name='404'),
-    path('test/', views.testing_views, name='test'),
 ]

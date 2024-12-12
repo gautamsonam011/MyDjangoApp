@@ -57,11 +57,3 @@ def not_found(request):
     return HttpResponse(template.render())
 
 # text views 
-
-def testing_views(request):
-    template = loader.get_template('./MDA/testing.html')
-    context = {
-        'fruits': ['Apple', 'Banana', 'Cherry'],
-    }
-
-    return HttpResponse(template.render(context, request))
