@@ -1,0 +1,31 @@
+{% extends "MDA/base.html " %}
+
+{% block title %}
+  List of all Users
+{% endblock %}
+
+{% block content %}    
+    <h1>This is a django</h1>
+    
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Mobile Number</th>
+            <th>Joined Date</th>
+            <th>View Details</th>
+        </tr>
+        {% for a in new_data %}
+        <tr>
+            <td>{{a.id}}</td>
+            <td>{{a.firstName}} {{a.lastName}}</td>
+            <td>{{a.age}}</td>
+            <td>{{a.mobile}}</td>
+            <td>{{a.joined}}</td>
+            <td><a href="master/{{a.id}}">-></a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endblock %}
