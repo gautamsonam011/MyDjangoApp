@@ -71,7 +71,7 @@ def testing_views(request):
 def variables_create(request):
     template = loader.get_template('./MDA/home.html')
     context = {
-        'fruit': 'Chiku',
+        'fruits': 'Chiku',
     }
 
     return HttpResponse(template.render(context, request))

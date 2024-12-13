@@ -5,7 +5,7 @@ This is a home page
 {% endblock %}
 
 {% block content %}
-<!-- {% include "menu.html" with me="Sonam" sponsor="WWW" %} -->
+
 <h1>My Home Page</h1>
 {{fruit}}
 <h3>Users</h3>
@@ -28,27 +28,9 @@ This is a home page
 
 <!-- elif  -->
 
-{% if greet == 1 %}
+{% if greeting == 1 %}
 <h2>Hello</h2>
-{% elif greet == 2 %}
+{% elif greeting == 2 %}
 <h2>Welcome</h2>
-{% else %}
-<h3>Goodbye</h3>
 {% endif %}
-
-<!-- Comments  -->
-
-{% comment %}
-<h3>Welcome ladies and gentleman </h3>
-{% endcomment %}
-
-<!-- comment description  -->
-
-{% comment "this was the original welcome message" %}
-<h2>Welcome</h2>
-{% endcomment %}
-
-<!-- Footer  -->
-
-<!-- {% include "footer.html" %} -->
 {% endblock %}
